@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>List</title>
+    <link rel="stylesheet" type="text/css" href="stylelist.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="judul">TiangGawang.com</h1>
+        <p class="deskripsi">Situs berita bola terlengkap sejagat.
+    </header>
+    <script>
+        if (localStorage.getItem('theme') == 'dark') {
+            setDarkMode(true)
+        }
+        function setDarkMode(isDark) {
+            if (isDark) {
+                document.body.setAttribute('id', 'darkmode')
+                localStorage.setItem('theme', 'dark')
+            } else {
+                document.body.setAttribute('id', '')
+                localStorage.setItem('theme')
+            }
+        }
+    </script>
+    <div class="wrap">
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="profil.html">PROFIL</a>
+                </li>
+                <li>
+                    <a href="#">List</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="profil">
+            <div class="contenprofil">
+                <H1>Todo List</h1>
+                <div class="inputField">
+                    <input type="text" placeholder="Masukan sebauh tugas">
+                    <button>+</button>
+                </div>
+                <ul class="todoList">
+                    <!-- data are comes from local storage -->
+                </ul>
+                <div class="footerList">
+                    <span>Total <span class="pendingTasks"></span> tugas</span>
+                    <button>Bersihkan</button>
+                </div>
+            </div>
+
+            <!-- <script src="script.js"></script> -->
+            <script src="script.js"></script>
+        </div>
+        <div class="footer">
+
+            <ul>
+                <center>
+                    <p>Copyright &copy; 2021 tianggawang.com</p>
+                </center>
+                <li>
+                    <img src="igg.png">
+                </li>
+                <li>
+                    <img src="tw.png">
+                </li>
+                <li>
+                    <img src="em.png">
+                </li>
+    
+            </ul>
+        </div>
+        </div>
+    </div>
+ 
+</body>
+
+</html>

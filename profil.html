@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Profil</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="judul">TiangGawang.com</h1>
+        <p class="deskripsi">Situs berita bola terlengkap sejagat.
+    </header>
+    <script>
+        if (localStorage.getItem('theme') == 'dark') {
+                        setDarkMode(true)
+                    }
+                    function setDarkMode(isDark){
+                    if (isDark) {
+                        document.body.setAttribute('id', 'darkmode')
+                        localStorage.setItem('theme', 'dark')
+                    } else {
+                        document.body.setAttribute('id', '')
+                        localStorage.setItem('theme')
+                    }
+                    }  
+        </script>
+    <div class="wrap">
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="profil.html">PROFIL</a>
+                </li>
+                <li>
+                    <a href="list.html">List</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="profil">
+            <div class="contenprofil">
+                <img src="jw.jpg">
+                <h1> John Wick </h1>
+                <hr>
+                <p>username         : wickjohn123</p>
+                <p>email            : wickjohn123@mail.com</p>
+                <p>tanngal lahir    : 21 Maret 1987</p>
+            </div>
+
+        </div>
+        <div class="footer">
+            
+            <ul>
+                <center><p>Copyright &copy; 2021 tianggawang.com</p></center>
+                <li>
+                    <img src="igg.png">
+                </li>
+                <li>
+                    <img src="tw.png">
+                </li>
+                <li>
+                    <img src="em.png">
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+     
+</body>
+
+</html>

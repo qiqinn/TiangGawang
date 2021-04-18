@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TiangGawang</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="judul">TiangGawang.com</h1>
+        <p class="deskripsi">Situs berita bola terlengkap sejagat.
+    </header>
+    <div class="wrap">
+
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="profil.html">PROFIL</a>
+                </li>
+                <li>
+                    <a href="list.html">List</a>
+                </li>
+
+            </ul>
+        </nav>
+        <aside class="sidebar_kanan">
+        <div class="widget">
+                <h2>Pilih Mode!</h2>
+                <button onclick="setDarkMode(false)">terang</button>
+                <button onclick="setDarkMode(true)">gelap</button>
+
+                 <script>
+                    if (localStorage.getItem('theme') == 'dark') {
+                        setDarkMode(true)
+                    }
+
+
+                    function setDarkMode(isDark){
+                    if (isDark) {
+                        document.body.setAttribute('id', 'darkmode')
+                        localStorage.setItem('theme', 'dark')
+                    } else {
+                        document.body.setAttribute('id', '')
+                        localStorage.setItem('theme', 'notdark')
+                    }
+                    }
+                    </script>
+            </div>
+
+
+
+            <div class="widget">
+                <h2>Cari berita</h2>
+                <form>
+                    <input type="text">
+                    <button>Cari</button>
+                </form>
+            </div>
+            <div class="widget">
+                <h2>Berita Populer </h2>
+                <a href="https://www.bola.com/inggris/read/4519719/fix-tak-masuk-rencana-thomas-tuchel-5-pemain-ini-tinggal-tunggu-waktu-dilego-chelsea" >Fix Tak Masuk Rencana Thomas Tuchel, 5 Pemain Ini Tinggal Tunggu Waktu Dilego Chelsea</a>
+                <a href="#" >Peran Magis Trio Jatim dan Kecerdikan Paul Munster dalam Meramu Bhayangkara Solo FC di Piala Menpora</a>
+                <a href="#" >3 Gol Terbaik Matchday Kedua Piala Menpora: Sepakan Jarak Jauh yang Merobek Sudut Atas Gawang Lawan</a>
+                <a href="#" >13 Pemain Didikan Akademi Chelsea yang Bakatnya Disia-siakan, Bagaimana Nasib Mereka Kini?</a>
+                <a href="#" >3 Andalan Borneo FC untuk Bungkam PSM di Piala Menpora: Enggan Pulang dengan Tangan Hampa</a>
+            </div>
+        </aside>
+        
+        <aside class="sidebar_kiri">
+            <div class="widget">
+                <h2>Kategori</h2>
+                <a href="https://www.bola.com/inggris" >Liga Inggris</a>
+                <a href="#" >Liga Spanyol</a>
+                <a href="#" >Liga Itali</a>
+                <a href="#" >Liga Perancis</a>
+                <a href="#" >Liga Champion</a>
+            </div>
+            <div class="widget">
+                <h2>Liga Lokal</h2>
+                <a href="#" >Indonesia Soccer Championship A</a>
+                <a href="#" >Indonesia Soccer Championship B</a>
+                <a href="#" >Liga Nusantara</a>
+                <a href="#" >Liga Supe</a>
+                <a href="#" >Divisi Utama</a>
+                <a href="#" >Divisi Satu</a>
+            </div>
+            <div class="widget">
+                <h2>Jadwal Pertandingan</h2>
+                <a href="#" >Liga Inggris</a>
+                <a href="#" >Liga Spanyol</a>
+                <a href="#" >Liga Itali</a>
+                <a href="#" >Liga Perancis</a>
+                <a href="#" >Liga Champion</a>
+            </div>
+        </aside>
+         
+        
+        <div class="blog">
+            <div class="conteudo">
+                <div class="post-info">
+                Author <b>Admin</b> Pada Kamis 21 Maret
+                </div>
+                <img src="1.jpg">
+                <h1> Liga Inggris: Resmi Bercerai dengan Manchester City, Sergio Aguero Banjir Tribute dan Sanjungan
+                </h1>
+                <hr>
+                <p>
+                    Lebersamaan Sergio Aguero dengan Manchester City dipastikan berakhir pada musim panas tahun ini.
+                    Berbagai tribute dan sanjungan diberikan untuk Aguero yang menorehkan prestasi mengilap bersama
+                    City.
+                </p>
+                <a href="https://www.bola.com/inggris/read/4519096/liga-inggris-resmi-bercerai-dengan-manchester-city-sergio-aguero-banjir-tribute-dan-sanjungan?source=search" class="continue-lendo">Selengkapnya →
+                </a>
+            </div>
+
+            <div class="conteudo">
+                <div class="post-info">
+                    Author <b>Admin</b>  Pada Kamis 21 Maret
+                </div>
+                <img src="2.jpg">
+                <h1> Juventus Terpuruk, Andrea Pirlo Belum Siap Jadi Pelatih </h1>
+                <hr>
+                <p>
+                    Legenda sepak bola Italia, Claudio Gentile, enggan menyalahkan
+                    Andrea Pirlo atas buruknya performa Juventus pada musim ini.
+                </p>
+                <a href=" #" class="continue-lendo">Selengkapnya →</a>
+            </div>
+
+            <div class="conteudo">
+                <div class="post-info">
+                    Author <b>Admin</b> Pada Kamis 21 Maret
+                </div>
+                <img src="3.jpg">
+                <h1> 3 Bintang Bhayangkara Solo FC yang Bisa Bikin Persija Gugur di Piala Menpora : Barisan Para Mantan </h1>
+                <hr>
+                <p>
+                    Bhayangkara Solo FC memiliki tiga pemain yang pernah berseragam Persija Jakarta. Akankah mereka jadi biang kegagalan Macan Kemayoran ke fase gugur Piala Menpora 2021?
+                </p>
+                <a href=" #" class="continue-lendo">Selengkapnya →
+                </a>
+            </div>
+
+        
+
+
+        <div class="footer">
+            
+            <ul>
+                <center><p>Copyright &copy; 2021 tianggawang.com</p></center>
+                <li>
+                    <img src="igg.png">
+                </li>
+                <li>
+                    <img src="tw.png">
+                </li>
+                <li>
+                    <img src="em.png">
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+    
+</body>
+
+</html>
